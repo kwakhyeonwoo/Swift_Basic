@@ -22,7 +22,8 @@ print("hyun의 이름2: \(hyunClone.name)")
 print("hyun의 이름3: \(hyun.name)")
 
 //struct에서 이름1: 현우, 이름2: 인간, 이름3: 현우
-//hyun.name의 값이 현우가 나온 이유는 hyunClone의 prototype을 생각해보면 간단함. hyunClone.name이라는 prototype의 name인 값을 바꿨는데 hyun에는 바꾸지 않았고 값을 참조도 하지 않았음. 따라서 hyun.name에는 "현우"값이 나오는게 맞음. 그리고 hyunClone.name이라는 prototype의 name에 값을 "인간"으로 바꿔서 hyunClone.name은 "인간"으로 나오는것도 맞음
+//hyun.name의 값이 현우가 나온 이유는 hyunClone의 prototype을 생각해보면 간단함. hyunClone.name이라는 prototype의 name인 값을 바꿨는데 hyun에는 바꾸지 않았고 값을 참조도 하지 않았음. 
+//따라서 hyun.name에는 "현우"값이 나오는게 맞음. 그리고 hyunClone.name이라는 prototype의 name에 값을 "인간"으로 바꿔서 hyunClone.name은 "인간"으로 나오는것도 맞음
 
 //class 문법
 class YoutuberClass {
