@@ -36,7 +36,9 @@ class MyFriend{
 var myFriend = MyFriend("현우")
 let aFriend = MyFriend()
 
+//anObjectMemoryAddress의 물리 메모리 주소 구하는 함수
 let anObjectMemoryAddress = Unmanaged.passUnretained(aFriend).toOpaque()
+//secondMemoryAddress의 물리 메모리 주소 구하는 함수
 let secondMemoryAddress = Unmanaged.passUnretained(myFriend).toOpaque()
 
 print(anObjectMemoryAddress)
