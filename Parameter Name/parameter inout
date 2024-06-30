@@ -1,0 +1,19 @@
+import UIKit
+
+func sayName(_ name : String){
+    print("안녕 나는 \(name) 이라고 해")
+}
+
+//상수 name을 변수로 바꾸기 위해 매개변수 자료형 앞에 inout을 사용
+func sayHi(_ name: inout String){
+    name = "개발중인 " + name
+    print("안녕 나는 \(name) 이라고 해")
+}
+
+//sayName에 parameter값이 name : String으로 되어 있고 함수 호출시 String문자열로 print해줌
+sayName("현우")
+
+//현재 name은 상수로 표기 되어 있으므로 변수인 var로 변경하여 설정한다.
+var name = "현우"
+//parameter inout을 사용하면 &표시로 상수인 let의 값의 name을 변수 var로 설정해서 바꿔줬다를 의미함
+sayHi(&name)
