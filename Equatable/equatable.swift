@@ -6,7 +6,8 @@ struct Pet : Equatable{
     let id : String
     let name : String
     static func == (lhs: Pet, rhs: Pet) -> Bool {
-        return lhs.id == rhs.id
+        //비교연산자 ||, &&를 통해서도 구현 가능 
+        return lhs.id == rhs.id && lhs.name == rhs.name
     }
     
     static func != (lhs: Pet, rhs: Pet) -> Bool {
