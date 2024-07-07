@@ -1,0 +1,16 @@
+import UIKit
+
+enum Pet : String, CaseIterable{
+    case cat = "고양이"
+    case dog = "강아지"
+    case bird = "새"
+}
+
+//let myPet : [Pet] = [Pet.cat, Pet.dog, Pet.bird]
+
+//enum을 통해서 반복을 돌리고 싶을때
+//enum을 배열 형태로 변형
+let myPetNames : [String] = Pet.allCases.map{ $0.rawValue }
+
+print(myPetNames)
+
