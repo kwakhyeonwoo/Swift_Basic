@@ -8,7 +8,7 @@ if case (x: 2, y: 0) = somePoint{
     print("if case밖에 들어감")
 }
 
-func checkSomePoing(someValue : (x: Int, y: Int)){
+func checkSomePoint(someValue : (x: Int, y: Int)){
     guard case (x: 2, y: 0) = somePoint else{
         print("guard case 밖에 들어가있음")
         return
@@ -16,7 +16,7 @@ func checkSomePoing(someValue : (x: Int, y: Int)){
     print("guard case 안에 있음")
 }
 
-checkSomePoing(someValue: somePoint)
+checkSomePoint(someValue: somePoint)
 
 switch somePoint {
 case (x: 0, y : 0):
